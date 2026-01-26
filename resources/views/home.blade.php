@@ -116,7 +116,7 @@
 
 
                 <div class="row">
-                    @foreach ($updates as $item)
+                    @foreach ($items as $item)
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm">
 
@@ -203,7 +203,7 @@
             <div class="sidebar-box">
                 <h5 class="fw-bold mb-3 text-primary">Free Webinars for All</h5>
 
-                @foreach ([1, 2] as $w)
+                @foreach ($items as $item)
                     <div class="d-flex gap-3 mb-3">
                         <img src="{{ Storage::url($item->image) }}" style="width:70px;height:70px;object-fit:cover"
                             class="rounded">
@@ -224,7 +224,7 @@
                 <h5 class="fw-bold mb-3 text-primary">Ask a Lawyer
                     Get Free Answers</h5>
 
-                @foreach ([1, 2] as $w)
+                @foreach ($items as $item)
                     <div class="d-flex gap-3 mb-3">
                         <img src="{{ Storage::url($item->image) }}" style="width:70px;height:70px;object-fit:cover"
                             class="rounded">
@@ -244,7 +244,7 @@
             <div class="sidebar-box">
                 <h5 class="fw-bold mb-3 text-primary">Find a Lawyer</h5>
 
-                @foreach ([1, 2] as $w)
+                @foreach ($items as $item)
                     <div class="d-flex gap-3 mb-3">
                         <img src="{{ Storage::url($item->image) }}" style="width:70px;height:70px;object-fit:cover"
                             class="rounded">
